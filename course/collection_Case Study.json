@@ -1,0 +1,218 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Case Study",
+    "dateExported": "2023-11-23T09:38:59.566Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3cb29240-db5b-420c-99b0-6c33a1b8821b",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Hello",
+            "url": "http://localhost:8080/education/hello",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-05T19:36:21.899Z",
+            "modified": "2023-11-05T19:36:21.899Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userName\": \"Hitesh\",\n  \"password\": \"Hitesh\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e5fa5a65-43a6-477d-b86b-ed36c55e3e61",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Register Student",
+            "url": "http://localhost:8080/education/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-20T19:29:03.839Z",
+            "modified": "2023-11-22T20:51:02.062Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Rajesh Kumar\",\n  \"username\": \"rajeshk\",\n  \"password\": \"rajeshk\",\n  \"address\": \"Flat No. 101, Shree Ganesh Apartment, Kalyan West\",\n  \"state\": \"Maharashtra\",\n  \"country\": \"India\",\n  \"email\": \"rajeshk@gmail.com\",\n  \"studentId\": \"STU-2023-001\",\n  \"contactNo\": \"+91-9876543210\",\n  \"dateOfBirth\": \"1999-01-01\",\n  \"courses\": [\n    {\n      \"courseUuid\": \"9ea118ab-22ed-4300-af8f-68448c3727e9\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e69459bb-b5e2-4115-a3ac-cb79ff1d249e",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Student Login",
+            "url": "http://localhost:8080/education/login?username=rajeshk&password=rajesh",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-20T19:39:31.828Z",
+            "modified": "2023-11-22T06:45:49.676Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "rajeshk",
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "rajesh",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6f55b73a-d166-4097-8d86-19e6f2230f16",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Get Student",
+            "url": "http://localhost:8080/education/student?username=rajeshk&password=rajeshk",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-11-21T17:57:55.412Z",
+            "modified": "2023-11-21T17:57:55.412Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "rajeshk",
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "rajeshk",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "530bb93e-60d8-4fbe-a5ae-2bf340cd7f1d",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Add Course",
+            "url": "http://localhost:8081/course/addCourse",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-11-21T19:26:56.621Z",
+            "modified": "2023-11-22T19:51:35.250Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"courseName\": \"Introduction to Program\",\n    \"instructor\": \"John Doe\",\n    \"schedule\": \"Monday and Wednesday, 10:00 AM - 12:00 PM\",\n    \"description\": \"A beginner-friendly course to learn programming concepts.\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f42bac76-0634-48a4-b571-8d5c22e64b28",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Enroll Course",
+            "url": "http://localhost:8080/education/enrollCourse",
+            "method": "POST",
+            "sortNum": 65000,
+            "created": "2023-11-22T18:22:44.295Z",
+            "modified": "2023-11-22T18:24:32.800Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"studentUuid\": \"1cafbee5-851b-4573-b463-bdbbfaffb454\",\n  \"courseUuid\": \"31ba0299-a8ca-4c78-b3ab-3e69499c840d\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "62fccd3e-6332-443d-a7cf-bff790edf9ee",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Get Courses",
+            "url": "http://localhost:8080/course/getCourses",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-11-22T06:19:03.305Z",
+            "modified": "2023-11-22T06:20:32.465Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e67fcf05-673e-4d64-bf85-5137a4dd8737",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Register Faculty",
+            "url": "http://localhost:8080/faculty/register",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-11-22T08:23:13.381Z",
+            "modified": "2023-11-22T08:37:00.566Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Monu Verma\",\n  \"username\": \"mverma\",\n  \"password\": \"mverma\",\n  \"email\": \"mverma@gmail.com\",\n  \"employeeId\": \"FAC-2023-001\",\n  \"contactNo\": \"+91-0123456789\",\n  \"courses\": [\n    {\n      \"courseUuid\": \"4bc00641-f8d3-434d-ac89-3e69a92190ad\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b5d6a364-33a0-4356-bf94-b64a4f2f0fb9",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Faculty Login",
+            "url": "http://localhost:8080/faculty/login?username=mverma&password=mverma",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-11-22T08:37:19.255Z",
+            "modified": "2023-11-22T08:38:04.432Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "mverma",
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "mverma",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "285a1fe5-ed86-429c-b9ad-2121a40c746f",
+            "colId": "5e03c1c0-a233-4fd2-b85d-14d21bfd8406",
+            "containerId": "",
+            "name": "Remove Faculty",
+            "url": "http://localhost:8080/faculty/remove?username=mverma&password=mverma",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-11-22T14:51:36.380Z",
+            "modified": "2023-11-22T15:14:22.058Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "mverma",
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "mverma",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
